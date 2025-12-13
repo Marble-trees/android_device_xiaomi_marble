@@ -10,6 +10,9 @@ $(call inherit-product, device/xiaomi/marble/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# GameBar Performance Overlay
+$(call inherit-product, packages/apps/GameBar/gamebar.mk)
+
 PRODUCT_NAME := lineage_marble
 PRODUCT_DEVICE := marble
 PRODUCT_MANUFACTURER := Xiaomi
@@ -31,7 +34,7 @@ TARGET_ENABLE_BLUR := true
 TARGET_INCLUDES_LOS_PREBUILTS := true
 
 # Maintainer name (use "_" for spaces, e.g., "rmp_22" → "rmp 22" in UI)
-AXION_MAINTAINER := Ashwani
+AXION_MAINTAINER := nhAsif
 
 # Processor name (use "_" for spaces)
 AXION_PROCESSOR := Snapdragon®_7+_Gen_2_(SM7475)
