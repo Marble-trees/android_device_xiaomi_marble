@@ -10,9 +10,6 @@ $(call inherit-product, device/xiaomi/marble/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# GameBar Performance Overlay
-$(call inherit-product, packages/apps/GameBar/gamebar.mk)
-
 PRODUCT_NAME := lineage_marble
 PRODUCT_DEVICE := marble
 PRODUCT_MANUFACTURER := Xiaomi
